@@ -1,6 +1,6 @@
 # HOMELY_APP
 
-Project phase3.pdf
+
 
 ## About
 To help curb deficiency in management systems suitable for persons owing property, we designed Homely to help them. Homely is a simple web app that solves this problem by allowing landlords' and landladies to gather, manipulate and store data for sound decision making and planning.
