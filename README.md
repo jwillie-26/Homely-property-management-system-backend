@@ -5,7 +5,7 @@
 ## About
 To help curb deficiency in management systems suitable for persons owing property, we designed Homely to help them. Homely is a simple web app that solves this problem by allowing landlords' and landladies to gather, manipulate and store data for sound decision making and planning.
 
-###Database Design
+### ERD Design
 
 ![IMG-20230304-WA0000](https://user-images.githubusercontent.com/105637783/222875223-9d15db81-00c3-4108-b6c5-a5db51a52609.jpg)
 
