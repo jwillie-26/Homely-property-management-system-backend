@@ -1,4 +1,4 @@
-# HOMELY_APP
+# HOMELY_PROPERTY_MANAGEMENT_SYSTEM
 
 
 
@@ -11,6 +11,13 @@ To help curb deficiency in management systems suitable for persons owing propert
 
 
 
+
+## REQUIREMENTS
+
+For this project,
+
+- I Used Active Record to interact with a database.
+- It has three models as shown by the above ERD
 
 
 ## Technologies
