@@ -1,13 +1,10 @@
-gem "faker"
 source "https://rubygems.org"
+
+gem "faker"
+
 # A DSL for quickly creating web applications
 # https://github.com/sinatra/sinatra
 gem "sinatra", "~> 2.1"
-
-  group :production do
-      gem 'puma', '~> 6.1', '>= 6.1.1'
-      gem 'pg', '~> 1.4', '>= 1.4.6'
-  end
 
 # A fast and simple web server
 # https://github.com/macournoyer/thin
@@ -34,7 +31,7 @@ gem "sinatra-activerecord", "~> 2.0"
 gem "rake", "~> 13.0"
 
 # Provides functionality to interact with a SQLite3 database
-gem "sqlite3", "~> 1.4"
+gem "sqlite3", "~> 1.6.1"
 
 # Require all files in a folder
 gem "require_all", "~> 3.0"
@@ -54,4 +51,9 @@ group :test do
   gem "rack-test", "~> 1.1"
   gem "rspec", "~> 3.10"
   gem "rspec-json_expectations", "~> 2.2"
+end
+
+group :production do
+  gem 'puma', '~> 6.1', '>= 6.1.1'
+  gem 'pg', '~> 1.4', '>= 1.4.6'
 end
