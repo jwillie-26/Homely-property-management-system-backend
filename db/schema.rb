@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_03_02_145933) do
+ActiveRecord::Schema.define(version: 2023_03_04_100553) do
 
   create_table "landlords", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.string "img_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 2023_03_02_145933) do
 
   create_table "properties", force: :cascade do |t|
     t.string "location"
-    t.string "property_type"
     t.string "property_name"
+    t.string "property_type"
     t.string "property_size"
     t.integer "landlord_id"
     t.datetime "created_at", precision: 6, null: false
@@ -34,7 +34,7 @@ ActiveRecord::Schema.define(version: 2023_03_02_145933) do
   create_table "tenants", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.integer "phone_number"
+    t.string "phone_number"
     t.integer "rent"
     t.integer "property_id"
     t.datetime "created_at", precision: 6, null: false
