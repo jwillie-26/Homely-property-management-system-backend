@@ -27,6 +27,12 @@ class ApplicationController < Sinatra::Base
     Property.all.to_json
   end
 
+  # get a properties
+  get "/properties/:id" do
+    properties = Property.find(params[:id])
+    properties.to_json
+  end
+
   # get property count
   get "/total properties" do
     Property.all.count.to_json
@@ -84,7 +90,7 @@ class ApplicationController < Sinatra::Base
   end
 
   # updating property
-  patch "/property/:id" do
+  patch "/properties/:id" do
     property = Property.find(params[:id])
     property.update(
       location: params[:location],
